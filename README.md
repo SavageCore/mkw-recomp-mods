@@ -8,3 +8,5 @@ the overlay `manifest.tsv` itself.
 | Mod | Game | Status |
 |---|---|---|
 | [Timer/](Timer/) | 1.8.0 | works (mod menu + in-game verified) |
+| [ClassicGP/](ClassicGP/) | 1.8.0 | ported (mod menu verified; in-game check pending) |
+| [SecretTracks/](SecretTracks/) | 1.8.0 | RomFS-only, no code; enabling both merges their shared archive |

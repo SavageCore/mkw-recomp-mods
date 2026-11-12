@@ -1,0 +1,68 @@
+{
+  "name": "ClassicGP",
+  "title": "ClassicGP",
+  "has_romfs": true,
+  "romfs_files": 1,
+  "has_exefs": true,
+  "exefs_builds": [
+    "d00e4f399e411d0613aa8d26b1c02fef00000000"
+  ],
+  "exefs_match": true,
+  "switches": {
+    "CLASSICGP": "1"
+  },
+  "patches": {
+    "sites": [
+      {
+        "set": "classicgp",
+        "env": "MKW_CLASSICGP",
+        "module": "main",
+        "off": "bb1360",
+        "orig": "B9401408",
+        "repl": [
+          "52800028"
+        ]
+      },
+      {
+        "set": "classicgp",
+        "env": "MKW_CLASSICGP",
+        "module": "main",
+        "off": "bb136c",
+        "orig": "293F27A8",
+        "repl": [
+          "293F27BF"
+        ]
+      },
+      {
+        "set": "classicgp",
+        "env": "MKW_CLASSICGP",
+        "module": "main",
+        "off": "7d201c",
+        "orig": "51001D4A",
+        "repl": [
+          "5100214A"
+        ]
+      },
+      {
+        "set": "classicgp",
+        "env": "MKW_CLASSICGP",
+        "module": "main",
+        "off": "85a6e4",
+        "orig": "11000508",
+        "repl": [
+          "2A1F03E8"
+        ]
+      },
+      {
+        "set": "classicgp",
+        "env": "MKW_CLASSICGP",
+        "module": "main",
+        "off": "5572e0",
+        "orig": "39400000",
+        "repl": [
+          "52800020"
+        ]
+      }
+    ]
+  }
+}
