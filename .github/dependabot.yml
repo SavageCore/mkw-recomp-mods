@@ -1,0 +1,13 @@
+# Grouped Dependabot: one PR for all GitHub Actions updates, weekly. Versions below
+# start at the latest majors; Dependabot keeps them there.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      actions:
+        patterns: ["*"]
+    commit-message:
+      prefix: "chore(deps)"
