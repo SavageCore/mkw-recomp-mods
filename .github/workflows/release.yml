@@ -24,32 +24,7 @@ jobs:
       - uses: actions/checkout@v7
 
       - name: Validate mod.json files
-        run: |
-          python3 - <<'EOF'
-          import json, sys
-          from pathlib import Path
-          ok = True
-          for meta in sorted(Path('.').glob('*/mod.json')):
-              try:
-                  m = json.loads(meta.read_text())
-              except ValueError as e:
-                  print(f'{meta}: invalid JSON: {e}')
-                  ok = False
-                  continue
-              for k in ('name', 'title', 'has_romfs', 'switches'):
-                  if k not in m:
-                      print(f'{meta}: misses "{k}"')
-                      ok = False
-              for p in m.get('patches', {}).get('spans', []) + m.get('patches', {}).get('sites', []):
-                  for k in ('set', 'env', 'module', 'off'):
-                      if k not in p:
-                          print(f'{meta}: patch misses "{k}"')
-                          ok = False
-                  if not str(p.get('env', '')).startswith('MKW_'):
-                      print(f'{meta}: env switch needs its MKW_ prefix')
-                      ok = False
-          sys.exit(0 if ok else 1)
-          EOF
+        run: python3 tools/validate.py
 
       - name: Build zips
         run: |
