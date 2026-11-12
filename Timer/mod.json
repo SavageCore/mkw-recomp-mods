@@ -1,0 +1,14 @@
+{
+  "name": "Timer",
+  "title": "Timer",
+  "has_romfs": true,
+  "romfs_files": 1,
+  "has_exefs": true,
+  "exefs_builds": [
+    "d00e4f399e411d0613aa8d26b1c02fef00000000"
+  ],
+  "exefs_match": true,
+  "switches": {
+    "TIMER": "1"
+  }
+}
