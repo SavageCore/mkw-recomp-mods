@@ -13,3 +13,9 @@ Hills, DK Pass, MooMoo Farm, West City, ShyGuy Bazaar, First Circuit, Koopa Troo
 
 This mod is RomFS-only (no code, no switches). It replaces the same `general_format` sarc as
 ClassicGP: enabling both at once serves only one. Use the [Combined](../Combined/) mod for both.
+
+## Credits
+
+Port of [14 Added Hidden Tracks](https://gamebanana.com/mods/736373) by liskadi, used under
+[CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) (non-commercial, no derivatives
+beyond this port, credit kept). Ported verbatim: same sarc members, messages, minimap and size table.

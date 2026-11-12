@@ -11,3 +11,9 @@ start screen's Mods page (zip or folder — this folder is the mod).
 
 Enabling the mod in the menu sets `MKW_TIMER=1` for the next start; the generated code then skips the
 timer-hide block exactly as the mod's branch does. Disabling restores the stock timer.
+
+## Credits
+
+Port of [Race Timer is Back](https://gamebanana.com/mods/736734) by liskadi, used under
+[CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) (non-commercial, no derivatives
+beyond this port, credit kept). Ported verbatim: same BFLAN, same code patch (now a patch span).

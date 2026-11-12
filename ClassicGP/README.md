@@ -21,3 +21,9 @@ The five sites (`recomp` checks every original word at generate time):
 | `main+0x5572e0` `ldrb w0, [x0]` to `mov w0, #1` | `IsOpenFirst` returns true; the function returns right after | the mod verbatim |
 
 Enabling the mod sets `MKW_CLASSICGP=1` for the next start.
+
+## Credits
+
+Port of [Classic Grand Prix (No Intermissions!)](https://gamebanana.com/mods/736220) by liskadi, used under
+[CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) (non-commercial, no derivatives
+beyond this port, credit kept). Ported with one deliberate omission: the Special Cup unlock is skipped because the port already unlocks everything with its own UNLOCK_ALL hack. Everything else is verbatim.
