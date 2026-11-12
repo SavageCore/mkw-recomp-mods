@@ -11,8 +11,10 @@ Hills, DK Pass, MooMoo Farm, West City, ShyGuy Bazaar, First Circuit, Koopa Troo
 | `romfs/System/Resource/...rsizetable.zs` | the mod's size table for its sarc |
 | `romfs/Layout/MiniMap_...bntx.zs` | the added Peach Beach minimap |
 
-This mod is RomFS-only (no code, no switches). It replaces the same `general_format` sarc as
-ClassicGP: enabling both at once serves only one. Use the [Combined](../Combined/) mod for both.
+This mod is RomFS-only (no code, no switches) and ships byte-identical to the Switch original. It
+replaces the same `general_format` sarc as ClassicGP: enabling both makes the Mods page merge the
+two automatically (their 8 + 26 inner files are disjoint, verified), with a winner picker if they
+ever disagree on one.
 
 ## Credits
 
